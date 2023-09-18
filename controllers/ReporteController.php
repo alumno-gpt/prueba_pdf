@@ -24,7 +24,6 @@ class ReporteController {
         ]);
         $mpdf->SetMargins(30, 35, 25);
 
-        // Cargar una vista HTML con los datos de ventas
         $html = $router->load('reporte/pdf', [
             'ventas' => $ventas
           
