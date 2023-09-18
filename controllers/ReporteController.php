@@ -17,12 +17,12 @@ class ReporteController {
         // Crear un objeto mPDF
         $mpdf = new Mpdf([
             "orientation" => "P",
-            "default_font_size" => 12,
+            "default_font_size" => 14,
             "default_font" => "arial",
             "format" => "Letter",
             "mode" => 'utf-8'
         ]);
-        $mpdf->SetMargins(30, 35, 25);
+        $mpdf->SetMargins(30, 35, 55);
 
         $html = $router->load('reporte/pdf', [
             'ventas' => $ventas

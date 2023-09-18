@@ -1,5 +1,5 @@
 <h1 style="text-align: center;">REPORTE DE VENTAS DE LA TIENDA DE CORNELIO</h1>
-<table style="margin: 0 auto; border-collapse: collapse; width: 50%;">
+<table style="margin: 0 auto; border-collapse: collapse; width: 70%;">
     <thead>
         <tr>
             <th style="border: 1px solid black; text-align: center;">Fecha</th>
