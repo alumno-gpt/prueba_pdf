@@ -1,18 +1,20 @@
-<h1>Hola Mundo desde la Vista</h1>
-
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente voluptas animi cupiditate, magnam at odio quibusdam! Fugit labore officia eum exercitationem. Iure rem vero corporis ab dolore placeat nobis!</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Cantidad</th>
+            <th>Producto</th>
+            <th>Cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($ventas as $venta) : ?>
+            <tr>
+                <td><?= $venta->fecha ?></td>
+                <td><?= $venta->cantidad ?></td>
+                <td><?= $venta->producto ?></td>
+                <td><?= $venta->cliente ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
