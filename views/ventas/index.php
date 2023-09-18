@@ -1,4 +1,4 @@
-<h1 class="text-center">BUSQUEDA DE VENTAS POR FECHA</h1>
+<h1 class="text-center">BUSQUEDA DE VENTAS</h1>
 <div class="row justify-content-center mb-5">
     <form class="col-lg-8 border bg-light p-3" id="formularioVenta">
         <div class="row mb-3">

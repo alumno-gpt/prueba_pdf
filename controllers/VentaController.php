@@ -19,9 +19,10 @@ class VentaController
     {
         $venta_fecha_inicio = $_GET['venta_fecha_inicio'];
         $venta_fecha_fin = $_GET['venta_fecha_fin'];
-        // Formatear las fechas en el formato YYYY-MM-DD HH:MM
+
         $fechaInicioFormateada = date('Y-m-d H:i', strtotime($venta_fecha_inicio));
         $fechaFinFormateada = date('Y-m-d H:i', strtotime($venta_fecha_fin));
+
 
         
 

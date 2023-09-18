@@ -1,1 +1,1 @@
-<p>foother PDF  Pagina no. {PAGENO} de {nb}</p>
+<p>Reporte de ventas PDF  Pagina no. {PAGENO} de {nb}</p>

@@ -28,10 +28,8 @@ class ReporteController {
         $html = $router->load('reporte/pdf', [
             'ventas' => $ventas
           
- // Pasa los datos de ventas a la vista
         ]);
-        // var_dump($ventas);
-        // exit();
+
 
 
         // Configurar encabezado y pie de página
@@ -47,30 +45,17 @@ class ReporteController {
         $mpdf->Output();
     }
 
-
-
-    ///otra prueba
-
-
-
     public static function generarPDF(Router $router)
 {
     $datos = json_decode(file_get_contents('php://input'));
 
     // Cargar una vista HTML con los datos
     $html = $router->load('reporte/pdf', [
-        'ventas' => $datos // Pasa los datos directamente a la vista
+        'ventas' => $datos 
     ]);
 
-
-
-
-    // Crear un objeto mPDF
     $mpdf = new Mpdf();
 
-
-
-    // Configurar encabezado y pie de página si es necesario
     $htmlHeader = $router->load('reporte/header');
     $htmlFooter = $router->load('reporte/footer');
     $mpdf->SetHTMLHeader($htmlHeader);

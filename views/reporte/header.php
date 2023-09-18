@@ -1,1 +1,1 @@
-<p>header PDF</p>
+<p>REPORTE DE VENTAS DE LA TIENDA, PDF.</p>
